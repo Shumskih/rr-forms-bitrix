@@ -1,8 +1,15 @@
 <?
 $aMenuLinks = Array(
 	Array(
+		"Напиши нам", 
+		"/contact-us-simple/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Contact us", 
-		"/contact-us/form.php", 
+		"/contact-us/", 
 		Array(), 
 		Array(), 
 		"" 

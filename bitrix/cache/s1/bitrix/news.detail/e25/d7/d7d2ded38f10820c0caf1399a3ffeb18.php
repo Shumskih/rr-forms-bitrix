@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001579495313';
-$dateexpire = '001615495313';
+$datecreate = '001579507296';
+$dateexpire = '001615507296';
 $ser_content = 'a:2:{s:7:"CONTENT";s:3768:"<div class="media">
             <img
                 src="/upload/iblock/c4e/c4effd840434e4cd72cc216eeb17f2c7.jpg"
