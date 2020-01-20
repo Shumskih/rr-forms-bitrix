@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Contact us", 
-		"/contact-us.php", 
+		"/contact-us/form.php", 
 		Array(), 
 		Array(), 
 		"" 

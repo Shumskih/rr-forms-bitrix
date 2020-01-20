@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001579088231';
-$dateexpire = '001615088231';
+$datecreate = '001579487867';
+$dateexpire = '001615487867';
 $ser_content = 'a:2:{s:7:"CONTENT";s:7509:"
 <div class="card-deck">
                     <div class="card mb-2">
