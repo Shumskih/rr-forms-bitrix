@@ -13,12 +13,13 @@
         </h5>
         <? if (!empty($arResult)): ?>
             <nav class="my-2 my-md-0 mr-md-3">
+                <a href="#" class="call_form">Показать форму</a>
                 <?
                 foreach ($arResult as $arItem):
                     if ($arParams["MAX_LEVEL"] == 1 && $arItem["DEPTH_LEVEL"] > 1)
                         continue;
                     ?>
-                    <a class="p-2 text-dark" href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
+                    <a class="p-2 text-dark <?= $arItem["PARAMS"]["call-form"] ?>" href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
                 <? endforeach ?>
             </nav>
         <? endif ?>

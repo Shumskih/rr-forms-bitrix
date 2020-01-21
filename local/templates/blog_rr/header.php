@@ -1,4 +1,9 @@
-<? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die(); ?>
+<?
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
+
+use Bitrix\Main\Page\Asset;
+
+?>
 
 <!doctype html>
 <html lang="en">
@@ -9,7 +14,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><? $APPLICATION->ShowTitle(); ?></title>
 
-    <? $APPLICATION->ShowHead();  ?>
+    <?
+    $APPLICATION->ShowHead();
+    CJSCore::Init(array("jquery"));
+    Asset::getInstance()->addJs((SITE_TEMPLATE_PATH . "/script.js"));
+    ?>
 </head>
 <body>
 
@@ -18,7 +27,7 @@
 </div>
 
 <header>
-    <?$APPLICATION->IncludeComponent("bitrix:menu","main_menu",Array(
+    <? $APPLICATION->IncludeComponent("bitrix:menu", "main_menu", Array(
             "ROOT_MENU_TYPE" => "top",
             "MAX_LEVEL" => "1",
             "CHILD_MENU_TYPE" => "top",
@@ -29,8 +38,6 @@
             "MENU_CACHE_TIME" => "3600",
             "MENU_CACHE_USE_GROUPS" => "Y",
             "MENU_CACHE_GET_VARS" => ""
-        )
-    );?>
+        )    ); ?>
 
-<main class="container">
-    
+    <main class="container">

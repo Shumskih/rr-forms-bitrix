@@ -1,0 +1,1 @@
+<?php $filesInfo = array("/local/templates/blog_rr/script.js" => "15795997151442",); ?>

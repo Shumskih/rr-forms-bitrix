@@ -1,0 +1,1 @@
+<?php $filesInfo = array("/local/templates/blog_rr/styles.css" => "1579578928794","/local/templates/blog_rr/template_styles.css" => "1578651118145037",); ?>
