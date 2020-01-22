@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001579088230';
-$dateexpire = '001615088230';
-$ser_content = 'a:2:{s:7:"CONTENT";s:3768:"<div class="media">
+$datecreate = '001579658909';
+$dateexpire = '001615658909';
+$ser_content = 'a:2:{s:7:"CONTENT";s:3754:"<div class="media">
             <img
                 src="/upload/iblock/c4e/c4effd840434e4cd72cc216eeb17f2c7.jpg"
                 class="align-self-start mr-3" alt="Article title 9"

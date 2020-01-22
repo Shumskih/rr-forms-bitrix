@@ -1,0 +1,1 @@
+<?php $filesInfo = array("/local/templates/.default/components/bitrix/form.result.new/popup2/style.css" => "1579653338623",); ?>

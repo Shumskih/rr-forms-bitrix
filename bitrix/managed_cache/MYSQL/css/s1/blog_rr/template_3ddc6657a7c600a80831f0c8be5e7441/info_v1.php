@@ -1,0 +1,1 @@
+<?php $filesInfo = array("/local/templates/.default/components/bitrix/form.result.new/popup/style.css" => "1579604783623","/local/templates/blog_rr/styles.css" => "15796535911943","/local/templates/blog_rr/template_styles.css" => "1579604783145018",); ?>

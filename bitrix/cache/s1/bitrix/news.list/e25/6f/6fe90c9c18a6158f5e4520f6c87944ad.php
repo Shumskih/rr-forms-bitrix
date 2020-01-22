@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001579580714';
-$dateexpire = '001615580714';
-$ser_content = 'a:2:{s:7:"CONTENT";s:7509:"
+$datecreate = '001579605036';
+$dateexpire = '001615605036';
+$ser_content = 'a:2:{s:7:"CONTENT";s:7367:"
 <div class="card-deck">
                     <div class="card mb-2">
             <a href="/articles/article-title-10/">
