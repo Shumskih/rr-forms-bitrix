@@ -1,6 +1,13 @@
 <?
 $aMenuLinks = Array(
 	Array(
+		"Component", 
+		"/component/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Напиши нам", 
 		"/contact-us-simple/", 
 		Array(), 
