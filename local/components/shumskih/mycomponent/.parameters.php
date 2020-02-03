@@ -69,21 +69,6 @@ $arComponentParameters = [
             "TYPE" => "STRING",
             "ADDITIONAL_VALUES" => "Y"
         ],
-        "SORT" => [
-            "PARENT" => "SETTINGS",
-            "NAME" => Loc::getMessage('SHUMSKIH_MYCOMPONENT_PROP_SORT'),
-            "TYPE" => "LIST",
-            "VALUES" => $sort,
-        ],
-        // Произвольный параметр типа СТРОКА
-        "SECTION_IDS" => [
-            "PARENT" => "SETTINGS",
-            "NAME" => Loc::getMessage('SHUMSKIH_MYCOMPONENT_PROP_SECTION_IDS'),
-            "TYPE" => "STRING",
-            "MULTIPLE" => "N",
-            "DEFAULT" => "",
-            "COLS" => 25
-        ],
         // Настройки кэширования
         'CACHE_TIME' => ['DEFAULT' => 3600],
     ]

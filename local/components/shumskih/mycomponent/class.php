@@ -55,7 +55,6 @@ class ShumskihMyComponent extends CBitrixComponent
     protected function getResult()
     {
         $filter = array(
-            'IBLOCK_TYPE' => $this->arParams['IBLOCK_TYPE'],
             'IBLOCK_ID' => $this->arParams['IBLOCK_ID'],
             'ACTIVE' => 'Y'
         );
@@ -68,7 +67,9 @@ class ShumskihMyComponent extends CBitrixComponent
             'PREVIEW_TEXT_TYPE',
             'PREVIEW_PICTURE'
         );
-        $iterator = \CIBlockElement::GetList(array('SORT' => $this->arParams['SORT']),
+        $sort = array("timestamp_x "=>"DESC");
+        if (isset($_GET['date']) && $_GET['date'] == 'asc') $sort = array("timestamp_x "=>"ASC");
+        $iterator = \CIBlockElement::GetList($sort,
             $filter,
             false,
             false,
@@ -82,12 +83,8 @@ class ShumskihMyComponent extends CBitrixComponent
                 'URL' => $element['DETAIL_PAGE_URL'],
                 'TEXT' => $element['PREVIEW_TEXT']
             );
-            $iterator2 = CFile::GetByID($element['PREVIEW_PICTURE']);
-            while ($image = $iterator2->getNext()) {
-                $this->arResult['ITEMS'][$element['ID']]['PREVIEW_PICTURE'] = '/upload/' . $image['SUBDIR'] . '/' . $image['FILE_NAME'];
-                $this->arResult['ITEMS'][$element['ID']]['PREVIEW_PICTURE_HEIGHT'] = $image['WIDTH'];
-                $this->arResult['ITEMS'][$element['ID']]['PREVIEW_PICTURE_WIDTH'] = $image['HEIGHT'];
-            }
+            $img = CFile::GetFileArray($element['PREVIEW_PICTURE']);
+            $this->arResult['ITEMS'][$element['ID']]['PREVIEW_PICTURE'] = $img['SRC'];
         }
     }
 

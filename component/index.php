@@ -1,7 +1,15 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php");
+CPageOption::SetOptionString(
+    'iblock',
+    'FORMAT_ACTIVE_DATES',
+    'SHORT',
+    false
+);
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_after.php");
 $APPLICATION->SetTitle("Component");
-?><?$APPLICATION->IncludeComponent(
+?>
+<? $APPLICATION->IncludeComponent(
 	"shumskih:mycomponent", 
 	".default", 
 	array(
@@ -11,8 +19,8 @@ $APPLICATION->SetTitle("Component");
 		"IBLOCK_ID" => "1",
 		"IBLOCK_TYPE" => "articles",
 		"SECTION_IDS" => "",
-		"SORT" => "1",
-		"COMPONENT_TEMPLATE" => ".default"
+		"SORT" => "0",
+		"COMPONENT_TEMPLATE" => ".default",
 	),
 	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+); ?><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
